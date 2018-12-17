@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fcfcfc"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:background="@drawable/main_background">
+
+            <TextView
+                android:id="@+id/home_today_hankang_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 한강"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="48dp"
+                android:layout_marginLeft="34dp"
+                />
+
+            <TextView
+                android:id="@+id/home_today_hankang_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘같은 날씨에 한강 어떠세요?"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/home_today_hankang_title_tv"
+                android:layout_alignLeft="@+id/home_today_hankang_title_tv"
+                android:layout_marginTop="5dp"
+                />
+
+            <View
+                android:id="@+id/home_center_view"
+                android:layout_width="0.5dp"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@+id/home_today_hankang_content_tv"
+                android:layout_marginLeft="60dp"
+                android:background="#ffffff"
+                android:layout_alignTop="@+id/home_today_hankang_title_tv"
+                />
+
+
+
+                <ImageView
+                    android:id="@+id/home_today_weather_img"
+                    android:layout_width="36.6dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_cloudy"
+                    android:layout_toRightOf="@id/home_center_view"
+                    android:layout_marginLeft="18.3dp"
+                    android:layout_marginTop="54dp"
+                    />
+
+                <TextView
+                    android:id="@+id/home_current_temp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23˚"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/home_today_weather_img"
+                    />
+
+            <TextView
+                android:id="@+id/home_today_temp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24˚/18˚"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_below="@+id/home_current_temp_tv"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/home_today_weather_img"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/fragment_home_layout"
+                android:layout_width="304dp"
+                android:layout_height="34dp"
+                android:background="@drawable/searchbar"
+                android:layout_below="@+id/home_today_hankang_content_tv"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="원하시는 활동을 검색해보세요."
+                    android:textSize="11sp"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/Transparent"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="16.1dp"
+                android:layout_height="16.1dp"
+                android:background="@drawable/btn_search"
+                android:layout_below="@+id/home_today_hankang_content_tv"
+                android:layout_alignRight="@+id/fragment_home_layout"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="34dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_proceeding_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:layout_marginTop="195dp"
+            >
+
+            <com.naengjjambbong.hankangmoa.Jemin.ViewPager.CustomViewPager
+                android:id="@+id/home_rc_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="22dp"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/home_select_type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@+id/home_proceeding_content_layout"
+            android:layout_marginTop="40.2dp"
+            >
+            
+            <LinearLayout
+                android:id="@+id/home_concert_layout"
+                android:layout_width="78dp"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_button"
+                >
+                
+                <ImageView
+                    android:layout_width="25.8dp"
+                    android:layout_height="25.6dp"
+                    android:src="@drawable/icon_concert"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18.8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문화/행사"
+                    android:textSize="10sp"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginTop="4.5dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_camping_layout"
+                android:layout_width="78dp"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_button"
+                android:layout_marginLeft="7.3dp"
+                android:layout_toRightOf="@+id/home_concert_layout"
+                >
+
+                <ImageView
+                    android:layout_width="25.8dp"
+                    android:layout_height="25.6dp"
+                    android:src="@drawable/icon_camping"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18.8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠핑"
+                    android:textSize="10sp"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginTop="4.5dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_sport_layout"
+                android:layout_width="78dp"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_button"
+                android:layout_toRightOf="@+id/home_camping_layout"
+                android:layout_marginLeft="7.3dp"
+                >
+
+                <ImageView
+                    android:layout_width="25.8dp"
+                    android:layout_height="25.6dp"
+                    android:src="@drawable/icon_sports"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18.8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스포츠"
+                    android:textSize="10sp"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginTop="4.5dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_water_layout"
+                android:layout_width="78dp"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_button"
+                android:layout_marginLeft="7.3dp"
+                android:layout_toRightOf="@+id/home_sport_layout"
+                >
+
+                <ImageView
+                    android:layout_width="25.8dp"
+                    android:layout_height="25.6dp"
+                    android:src="@drawable/icon_water"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18.8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="물놀이"
+                    android:textSize="10sp"
+                    android:textColor="#0f0f0f"
+                    android:layout_marginTop="4.5dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_hot_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="501.7dp"
+            android:layout_below="@id/home_select_type_layout"
+            >
+
+            <View
+                android:id="@+id/home_icon1_view"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon"
+                android:layout_marginTop="76.2dp"
+                android:layout_marginLeft="18dp"
+                />
+
+            <TextView
+                android:id="@+id/home_hot_activity_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기있는 활동"
+                android:textSize="15sp"
+                android:textColor="#484848"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="76.7dp"
+                android:textStyle="bold"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_hot_activity_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true   "
+                android:layout_marginHorizontal="15dp"
+                android:layout_below="@+id/home_hot_activity_title_tv"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_hot_location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="174.5dp"
+            android:layout_below="@+id/home_hot_activity_layout"
+            >
+
+            <View
+                android:id="@+id/home_icon2_view"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon"
+                android:layout_marginLeft="18dp"
+                />
+
+            <TextView
+                android:id="@+id/home_hot_location_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기있는 명소"
+                android:textSize="15sp"
+                android:textColor="#484848"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="0.5dp"
+                android:textStyle="bold"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_hot_loaction_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/home_hot_location_title_tv"
+                android:layout_marginTop="21.5dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/home_hot_location_layout"
+            >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

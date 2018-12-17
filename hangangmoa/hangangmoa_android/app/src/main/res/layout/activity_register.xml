@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jemin.Activity.RegisterActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:id="@+id/register_welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="24sp"
+        android:textColor="#1d1d1d"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        />
+    <TextView
+        android:id="@+id/register_semi_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한강모아가 처음이신가요?"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_welcome_tv"
+        android:layout_marginTop="1dp"
+        android:textColor="#717171"
+        />
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/register_profile_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/img_profile"
+        android:layout_below="@+id/register_semi_content_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        />
+
+    <Button
+        android:id="@+id/register_change_photo_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/btn_image_edit"
+        android:layout_marginTop="205dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="145dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/register_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/register_profile_img"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_join"
+        >
+
+        <ImageView
+            android:id="@+id/register_email_img"
+            android:layout_width="15dp"
+            android:layout_height="11.4dp"
+            android:src="@drawable/icon_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/register_email_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:textColorHint="#484848"
+            android:layout_toRightOf="@+id/register_email_img"
+            android:layout_marginLeft="9dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Transparent"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/register_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/register_email_layout"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_join"
+        >
+
+        <ImageView
+            android:id="@+id/register_name_img"
+            android:layout_width="15dp"
+            android:layout_height="14.3dp"
+            android:src="@drawable/icon_name"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/register_name_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="#484848"
+            android:layout_toRightOf="@+id/register_name_img"
+            android:layout_marginLeft="9dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Transparent"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/register_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/register_name_layout"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_join"
+        >
+
+        <ImageView
+            android:id="@+id/register_passwd_img"
+            android:layout_width="11.3dp"
+            android:layout_height="15dp"
+            android:src="@drawable/icon_password"
+            android:layout_marginTop="12.1dp"
+            android:layout_marginLeft="21.6dp"
+            />
+
+        <EditText
+            android:id="@+id/register_passwd_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#484848"
+            android:layout_toRightOf="@+id/register_passwd_img"
+            android:layout_marginLeft="11.1dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Transparent"
+            />
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/register_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_complete"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="59dp"
+        android:text="입력완료"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        >
+    </Button>
+</RelativeLayout>

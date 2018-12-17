@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naengjjambbong.hankangmoa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActionBarTheme">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".Jemin.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Gahee.Activity.ListActivity" />
+        <activity android:name=".Gahee.Activity.DetailActivity" />
+        <activity android:name=".Gahee.Activity.ReviewActivity" />
+        <activity android:name=".Gahee.Activity.ReviewWritingActivity" />
+        <activity android:name=".Jemin.Activity.MapViewActivity" />
+        <activity android:name=".Jemin.Activity.MainActivity" />
+        <activity android:name=".Jemin.Activity.LoginActivity" />
+        <activity android:name=".Jemin.Activity.RegisterActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.spring.seoulapp.memberMapper">
+ 
+     <!-- 
+        mybatis-config.xml의 typeAlias에 등록해두지 않았다면 
+        
+        <select id="selectMember" resultType="com.example.dto.MemberVO" >
+            SELECT ID, PW ,NAME FROM TEST
+        </select>
+        
+        이렇게 해야 한다.
+    -->
+    
+    <select id="selectMember" resultType="UserVO">
+        SELECT idx, email, pw, name from user
+    </select>
+    
+    <insert id="insertUser" parameterType="UserVO">
+        INSERT INTO user(idx, email, pw, name) values(#{idx}, #{email}, #{pw}, #{name})
+    </insert>
+    
+    <update id="updateUser" parameterType="UserVO">
+    	UPDATE user
+    	SET pw = #{pw}, name = #{name}
+    	WHERE email = #{email}
+    </update>
+    
+    <insert id="insertReview" parameterType="ReviewVO">
+		INSERT INTO review(idx, rvList, rvImage, rvText, listGrade) 
+		VALUES(#{idx}, #{rvList}, #{rvImage}, #{rvText}, #{listGrade})
+    </insert>
+
+    <insert id="insertLikeList" parameterType="LikeVO">
+		INSERT INTO likelist(idx, listName, listDate, listTime, listPlace, listInfo, imageURL) 
+		VALUES(#{idx}, #{listName}, #{listDate}, #{listTime}, #{listPlace}, #{listInfo},  #{imageURL})
+    </insert>
+    
+      <select id="getPwCheck" resultType="UserVO" parameterType="hashmap">
+        select
+            idx
+        from
+            user
+        where
+            email = #{email}
+            and pw = #{pw}
+   	 </select>
+   	 
+   	  <select id="selectReview" parameterType="hashmap" resultType="ReviewVO">
+        select idx, rvDate, rvImage, rvText, listGrade
+        from review 
+        where rvList = #{rvList}
+   	 </select>
+     
+</mapper>
+
+
+
+

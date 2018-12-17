@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="337dp"
+    android:layout_height="165dp"
+    android:layout_marginBottom="10dp"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/item_home_detail_background_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/example_content"
+        android:scaleType="fitXY"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"
+        />
+
+
+    <ImageView
+        android:id="@+id/item_home_detail_star1_img"
+        android:layout_width="10.2dp"
+        android:layout_height="9.6dp"
+        android:src="@drawable/img_star"
+        android:layout_marginTop="57dp"
+        android:layout_marginLeft="139dp"
+        />
+    <ImageView
+        android:id="@+id/item_home_detail_star2_img"
+        android:layout_width="10.2dp"
+        android:layout_height="9.6dp"
+        android:src="@drawable/img_star"
+        android:layout_toRightOf="@+id/item_home_detail_star1_img"
+        android:layout_alignTop="@id/item_home_detail_star1_img"
+        android:layout_marginLeft="1.3dp"
+        />
+    <ImageView
+        android:id="@+id/item_home_detail_star3_img"
+        android:layout_width="10.2dp"
+        android:layout_height="9.6dp"
+        android:src="@drawable/img_star"
+        android:layout_toRightOf="@+id/item_home_detail_star2_img"
+        android:layout_alignTop="@id/item_home_detail_star2_img"
+        android:layout_marginLeft="1.3dp"
+        />
+    <ImageView
+        android:id="@+id/item_home_detail_star4_img"
+        android:layout_width="10.2dp"
+        android:layout_height="9.6dp"
+        android:src="@drawable/img_star"
+        android:layout_toRightOf="@+id/item_home_detail_star3_img"
+        android:layout_alignTop="@id/item_home_detail_star3_img"
+        android:layout_marginLeft="1.3dp"
+        />
+    <ImageView
+        android:id="@+id/item_home_detail_star5_img"
+        android:layout_width="10.2dp"
+        android:layout_height="9.6dp"
+        android:src="@drawable/img_star"
+        android:layout_toRightOf="@+id/item_home_detail_star4_img"
+        android:layout_alignTop="@id/item_home_detail_star4_img"
+        android:layout_marginLeft="1.3dp"
+        />
+
+    <TextView
+        android:id="@+id/item_home_detail_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_home_detail_star5_img"
+        android:layout_alignTop="@id/item_home_detail_star5_img"
+        android:layout_marginLeft="0.5dp"
+        android:textSize="10sp"
+        android:textColor="#d3d3d3"
+        android:text="5.0"
+        />
+
+    <TextView
+        android:id="@+id/item_home_detail_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한강 다리밑 영화제"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/item_home_detail_star1_img"
+        android:layout_marginTop="6.4dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/item_home_deatail_range_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018. 08. 10 (금) ~ 08. 12(일)"
+        android:textSize="11sp"
+        android:textColor="#d3d3d3"
+        android:textStyle="bold"
+        android:layout_below="@+id/item_home_detail_name_tv"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/item_home_detail_heart_img"
+        android:layout_width="16.8dp"
+        android:layout_height="15dp"
+        android:src="@drawable/selector_heart_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12.2dp"
+        android:layout_marginRight="12.2dp"
+        />
+
+</RelativeLayout>

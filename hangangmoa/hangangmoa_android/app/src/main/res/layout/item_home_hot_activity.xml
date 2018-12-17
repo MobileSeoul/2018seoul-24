@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="143dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_hot_activity_img"
+            android:layout_width="160dp"
+            android:layout_height="105dp"
+            android:src="@drawable/example_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/round_main_hot_activity_img"
+            />
+
+        <TextView
+            android:id="@+id/item_hot_activity_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한여름밤의 재즈"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textColor="#484848"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/item_hot_date_range_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018. 08. 10(금) ~ 08. 12(일)"
+            android:layout_marginTop="1dp"
+            android:textSize="10sp"
+            android:textColor="#777777"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

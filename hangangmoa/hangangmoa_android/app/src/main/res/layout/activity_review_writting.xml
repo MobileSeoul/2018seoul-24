@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="리뷰 작성하기"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_review_writing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/review_writing_round">
+
+        <ImageView
+            android:id="@+id/review_write_activity_img"
+            android:layout_width="85.1dp"
+            android:layout_height="85.1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/example_content" />
+
+        <TextView
+            android:id="@+id/review_wirte_activity_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.9dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/review_write_activity_img"
+            android:text="한강 불꽃 축제"
+            android:textColor="#0f0f0f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/review_wirte_activity_range_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/review_wirte_activity_name_tv"
+            android:layout_below="@+id/review_wirte_activity_name_tv"
+            android:layout_marginTop="5dp"
+            android:text="2018. 08. 10 ~ 2018. 08. 12"
+            android:textColor="#484848"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/review_wirte_activity_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/review_wirte_activity_name_tv"
+            android:layout_below="@+id/review_wirte_activity_range_tv"
+            android:layout_marginTop="0.4dp"
+            android:text="난지 한강공원"
+            android:textColor="#484848"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/act_review_writting_rating_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/activity_review_writing_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/review_writing_round">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5sp"
+            android:text="별점을 입력해주세요"
+            android:textColor="#484848"
+            android:textSize="14sp" />
+
+        <RatingBar
+            android:id="@+id/review_write_rating_bar"
+            style="@style/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_review_writting_write"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_below="@+id/act_review_writting_rating_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/review_writing_round">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="리뷰를 입력해주세요."
+            android:textColor="#484848"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="51dp"
+            android:hint="리뷰를 입력해주세요."
+            android:textColor="#d1d1d1"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/review_write_add_box"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/act_review_writting_write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/review_writing_round">
+
+        <TextView
+            android:id="@+id/review_write_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="19dp"
+            android:lineSpacingExtra="5sp"
+            android:text="사진첨부"
+            android:textColor="#484848"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/review_write_add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="16.5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_camera" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="9.3dp"
+
+                android:src="@drawable/btn_arrow3" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/review_write_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/review_write_add_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_complete"
+        android:text="입력완료"
+        android:textColor="#ffffff"
+        android:textSize="15sp"></Button>
+
+</RelativeLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pool_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#fcfcfc">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/pool_proceeding_btn"
+                android:layout_width="65.1dp"
+                android:layout_height="28.8dp"
+                android:background="@drawable/selector_category_btn"
+                android:text="운영중"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/pool_stop_btn"
+                android:layout_width="65.1dp"
+                android:layout_height="28.8dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/selector_category_btn"
+                android:text="운영 중지"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tab_pool_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

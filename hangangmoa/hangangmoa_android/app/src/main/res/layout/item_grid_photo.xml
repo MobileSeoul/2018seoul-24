@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/grid_photo_img"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/example_content"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/grid_photo_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="양화대교"
+        android:textSize="13sp"
+        android:textColor="#0f0f0f"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/grid_photo_maker_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="송제민"
+        android:textSize="12sp"
+        android:textColor="#484848"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bar">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="12dp"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="3sp"
+                android:text="문화/전시 "
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_tag"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="45dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46.6dp"
+                android:layout_marginTop="9.5dp"
+                android:src="@drawable/icon_exhibit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5sp"
+                android:text="문화/전시"
+                android:textColor="#0f0f0f"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="17.9dp"
+                android:src="@drawable/btn_arrow" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="8dp"
+                android:background="#acacac" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="247dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="5sp"
+                android:text="최신순"
+                android:textColor="#0f0f0f"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="335dp"
+                android:layout_marginTop="17.9dp"
+                android:src="@drawable/btn_arrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="87dp"
+            android:background="#fcfcfc">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/btn_categry_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="22.5dp"
+                android:text="진행중"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="146.7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/btn_category_off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170.4dp"
+                android:layout_marginTop="22.5dp"
+                android:text="예정"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="220.6dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/btn_category_off" />
+
+            <TextView
+                android:id="@+id/list_completed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="243.1dp"
+                android:layout_marginTop="22.5dp"
+                android:gravity="center_vertical"
+                android:text="완 료"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="151dp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

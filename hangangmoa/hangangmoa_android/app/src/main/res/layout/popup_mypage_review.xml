@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="160dp"
+    android:background="@drawable/round_button"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="7sp"
+        android:text="닉네임 수정"
+        android:textColor="#2f2f2f"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#f5f5f5">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+        android:text="닉네임이 중복되었습니다!"
+        android:textColor="#c44e4e"
+        android:textSize="13sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="15dp"
+        android:background="#888888"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="취소"
+                android:textColor="#2f2f2f"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#7287a7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

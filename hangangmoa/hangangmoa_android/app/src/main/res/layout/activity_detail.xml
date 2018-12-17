@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:background="#000000">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:src="@drawable/img_category" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="69dp"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="3sp"
+                    android:text="한강 다리밑 영화제"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <LinearLayout
+                    android:id="@+id/detail_act_star_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="97dp">
+
+                    <ImageView
+                        android:id="@+id/detail_star_img1"
+                        android:layout_width="13.3dp"
+                        android:layout_height="12.6dp"
+                        android:src="@drawable/img_star" />
+
+                    <ImageView
+                        android:id="@+id/detail_star_img2"
+                        android:layout_width="13.3dp"
+                        android:layout_height="12.6dp"
+                        android:layout_marginStart="1.7dp"
+
+                        android:src="@drawable/img_star" />
+
+                    <ImageView
+                        android:id="@+id/detail_star_img3"
+                        android:layout_width="13.3dp"
+                        android:layout_height="12.6dp"
+                        android:layout_marginStart="1.7dp"
+                        android:src="@drawable/img_star" />
+
+                    <ImageView
+                        android:id="@+id/detail_star_img4"
+                        android:layout_width="13.3dp"
+                        android:layout_height="12.6dp"
+                        android:layout_marginStart="1.7dp"
+                        android:src="@drawable/img_star" />
+
+                    <ImageView
+                        android:id="@+id/detail_star_img5"
+                        android:layout_width="6.6dp"
+                        android:layout_height="12.6dp"
+                        android:layout_marginStart="1.8dp"
+                        android:src="@drawable/icon_starhalf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.4dp"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="2sp"
+                        android:text="3.5"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_festival_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="175dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="193dp"
+                android:background="@drawable/round_button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="16dp"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="2sp"
+                    android:text="행사개요"
+                    android:textColor="#6b7fa1"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="43.5dp"
+                    android:background="#b9b9b9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="68dp"
+                    android:text="날 짜"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="89dp"
+                    android:layout_marginTop="68dp"
+                    android:text="2018.07.21(금) ~ 08.18(일)"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="87dp"
+                    android:text="시 간"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="89dp"
+                    android:layout_marginTop="87dp"
+                    android:text="매주 토요일 20:00 ~ 22:00"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="105dp"
+                    android:text="장 소"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/act_detail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="89dp"
+                    android:layout_marginTop="105dp"
+                    android:text="망원 서울함 공원, 여의도 원효대교 남단 하부, 뚝섬 청담대교 북단 하부, 광나루 천호대교 남단 하부"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24.5dp"
+                    android:layout_marginTop="432dp"
+                    android:src="@drawable/icon_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="432dp"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="2sp"
+                    android:shadowColor="#29000000"
+                    android:shadowDy="3"
+                    android:shadowRadius="6"
+                    android:text="프로그램 소개"
+                    android:textColor="#6b7fa1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="467dp"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="3sp"
+                    android:text="무더위가 기승을 부리는 여름 밤, ‘한강 다리밑’은 도심 속 가장 시원한 야외 상영관으로 변신한다. 여름에만 만날 수 있는 가장 이색적인 공간에서 매주 새로운 주제의 다양한 영화를 관람할 수 있다."
+                    android:textColor="#484848"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="555dp"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="4sp"
+                    android:text="# 07.21 (희망)
+천호대교 남단 - 빅샤크 : 매직체인지, 청담대교 북단 - 얼리맨, 원효
+대교 남단 - 원더, 서울항공원 - 빅풋주니어
+# 07.28 (사랑)
+천호대교 남단 - 리스본행 야간열차, 청담대교 북단 - 러빙빈센트,
+원효대교 남단 - 에델과 어니스트, 서울항공원 - 바르다가 사랑한
+얼굴들
+# 08. 04(환상)
+천호대교 남단 - 신과 함께 : 죄와벌, 청담대교 북단 - 우주형제,
+원효대교 남단 - 쥬라기월드: 폴른킹덤, 서울항공원 - 어린왕자
+"
+                    android:textColor="#484848"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout_festival_summary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-15dp">
+
+                <ImageView
+                    android:id="@+id/detail_activity_review_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/btn_review" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="리뷰보기"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/detail_heart_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/layout_festival_summary"
+                android:layout_alignTop="@+id/layout_festival_summary"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/selector_detail_heart_btn"
+                android:src="@drawable/selector_detail_heart_btn" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_reserve"
+        android:lineSpacingExtra="3sp"
+        android:text="예약하기"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</LinearLayout>

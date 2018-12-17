@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="김지혜" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/btn_more" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="1dp"
+            android:text="시적 순간의 생명력으로 재창조했다. 그만의 고유한 방식으로 촬영된 ‘필름다이어리’ 작품들은 지나간 시간들에 살아 움직이는 이미지의 숨결을 불어넣는다. 덧없이 찰나..."
+            android:textColor="#484848"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="275dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="10dp"
+            android:text="2017.12.29"
+            android:textColor="#7a7a7a"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:background="#a0a0a0"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

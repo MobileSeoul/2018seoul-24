@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:background="@drawable/bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="마이페이지"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/btn_setting" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mypage_profile_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/img_profile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mypage_profile_photo_btn"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/mypage_profile_img"
+        android:layout_alignRight="@+id/mypage_profile_img"
+        android:layout_marginLeft="198dp"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/btn_image_edit" />
+
+    <RelativeLayout
+        android:id="@+id/frag_mypage_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypage_profile_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/fragment_mypage_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="김지혜"
+            android:textColor="#484848"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/fragment_mypage_name_tv"
+            android:src="@drawable/icon_edit" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frag_mypage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_mypage_name_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mypage_steamlist_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fragment_mypage_list_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="찜 목록"
+                android:textColor="#484848"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_mypage_list_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="12"
+                android:textColor="#484848"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mypage_myreview_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="내가 쓴 리뷰"
+                android:textColor="#484848"
+                android:textSize="13sp" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="7"
+                android:textColor="#484848"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_mypage_layout"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/fragment_mypage_view1"
+                android:layout_width="63dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:background="#7287a7" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/fragment_mypage_view2"
+            android:layout_width="63dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="#7287a7" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fragment_mypage_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frag_mypage_layout"
+        android:layout_marginTop="10dp"
+        android:background="#a7a7a7" />
+
+    <LinearLayout
+        android:id="@+id/fragmnet_mypage_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_mypage_view"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="337dp"
+    android:layout_height="165dp"
+    android:layout_marginBottom="12dp"
+    android:background="#000000"
+    android:layout_marginStart="12dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/btn_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_heart_off"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="12.2dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/img_star"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150.4dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/img_star"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161.9dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/img_star"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173.3dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/icon_starhalf"
+        />
+
+    <TextView
+        android:id="@+id/list_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="54dp"
+        android:textSize="10sp"
+        android:textColor="#d3d3d3"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="4sp"
+        android:text="3.5"
+        />
+
+    <TextView
+        android:id="@+id/list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginStart="102dp"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.05"
+        android:lineSpacingExtra="3sp"
+        android:text="한강 다리밑 영화제"
+        />
+
+    <TextView
+        android:id="@+id/list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="93dp"
+        android:textSize="11sp"
+        android:textColor="#d3d3d3"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="4sp"
+        android:text="2018. 08. 10 (금) ~ 08. 12(일)"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:id="@+id/sport_category1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#fcfcfc"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_sport_badminton_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="배드민턴"
+            />
+
+        <Button
+            android:id="@+id/tab_sport_ronbowling_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="론볼링"
+            />
+
+        <Button
+            android:id="@+id/tab_sport_rockclimbing_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="인공암벽"
+            />
+        <Button
+            android:id="@+id/tab_sport_water_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="수상레저"
+            />
+        <Button
+            android:id="@+id/tab_sport_inline_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="인라인"
+            />
+        <Button
+            android:id="@+id/tab_sport_jokgu_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="족구"
+            />
+
+        <Button
+            android:id="@+id/tab_sport_woodball_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="우드볼"
+            />
+
+        <Button
+            android:id="@+id/tab_sport_golf_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="골프"
+            />
+
+        <Button
+            android:id="@+id/tab_sport_basketball_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="농구"
+            />
+        <Button
+            android:id="@+id/tab_sport_volleyball_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="배구"
+            />
+        <Button
+            android:id="@+id/tab_sport_tennis_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="테니스"
+            />
+        <Button
+            android:id="@+id/tab_sport_soccer_btn"
+            android:layout_width="50dp"
+            android:layout_height="28.8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/selector_category_btn"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="축구"
+            />
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/sport_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

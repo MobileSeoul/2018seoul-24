@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/view_pager_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top">
+
+
+        <ImageView
+            android:id="@+id/view_pager_main_img"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/example_content"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/view_pager_main_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018 한강 불꽃축제"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="52dp"
+            />
+
+        <TextView
+            android:id="@+id/view_page_main_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018. 10. 07"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:layout_alignLeft="@+id/view_pager_main_name_tv"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            />
+
+
+</RelativeLayout>

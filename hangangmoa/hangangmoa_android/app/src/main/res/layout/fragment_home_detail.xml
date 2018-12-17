@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="12dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:text="문화/행사"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_tag"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_detail_category_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.5dp"
+            android:layout_marginStart="46.6dp"
+            android:src="@drawable/icon_exhibit"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/home_detail_category_spinner"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                >
+            </Spinner>
+            <Spinner
+                android:id="@+id/home_detail_sort_spinner"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                >
+            </Spinner>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="8dp"
+            android:background="#acacac"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_detail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/list_tag"
+        >
+
+    </LinearLayout>
+
+
+</RelativeLayout>

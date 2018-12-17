@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/linear_photo_maker_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="20.5dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/linear_photo_maker_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="송제민"
+        android:textSize="13sp"
+        android:textColor="#0f0f0f"
+        android:layout_toRightOf="@+id/linear_photo_maker_img"
+        android:layout_marginTop="32.5dp"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/linear_photo_heart_layout"
+        android:layout_width="17dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="27.5dp"
+        >
+        <Button
+            android:id="@+id/linear_photo_heart_btn"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_heart_btn"
+            />
+
+        <TextView
+            android:id="@+id/linear_photo_heart_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:textSize="10sp"
+            android:textColor="#2c2c2c"
+            android:layout_below="@+id/linear_photo_heart_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0.1dp"
+            />
+
+    </RelativeLayout>
+
+    
+    <ImageView
+        android:id="@+id/linear_photo_background_img"
+        android:layout_width="330dp"
+        android:layout_height="338dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear_photo_maker_img"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:id="@+id/linear_detail_all_content_layout"
+        android:layout_width="303dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="390.5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        >
+        
+        <ImageView
+            android:id="@+id/linear_detail_activity_explain_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/example_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            />
+
+        <TextView
+            android:id="@+id/linear_detail_activity_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한강몽땅 종이배경주대회"
+            android:textSize="13sp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/linear_detail_activity_explain_img"
+            android:layout_marginTop="10.7dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/linear_detail_activity_range_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018. 08. 10 ~ 2018. 08. 12"
+            android:textSize="12sp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/linear_detail_activity_explain_img"
+            android:layout_below="@+id/linear_detail_activity_name_tv"
+            android:layout_marginTop="0.2dp"
+            android:layout_alignLeft="@+id/linear_detail_activity_name_tv"
+            />
+        
+        <ImageView
+            android:id="@+id/linear_detail_icon_map_img"
+            android:layout_width="9.4dp"
+            android:layout_height="13dp"
+            android:src="@drawable/icon_map"
+            android:layout_below="@+id/linear_detail_activity_range_tv"
+            android:layout_toRightOf="@+id/linear_detail_activity_explain_img"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4.3dp"
+            />
+
+        <TextView
+            android:id="@+id/linear_detail_activity_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠실한강공원"
+            android:textSize="12sp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/linear_detail_icon_map_img"
+            android:layout_below="@+id/linear_detail_activity_range_tv"
+            android:layout_marginTop="3.3dp"
+            android:layout_marginLeft="2.6dp"
+            />
+        
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@drawable/btn_arrow2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linear_detail_activity_range_tv"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/linear_detail_small_content_layout"
+        android:layout_width="303dp"
+        android:layout_height="39dp"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="390.5dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/linear_detail_small_icon_map_img"
+            android:layout_width="13dp"
+            android:layout_height="18dp"
+            android:src="@drawable/icon_map"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="11dp"
+            />
+
+        <TextView
+            android:id="@+id/linear_detail_small_activity_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠실한강공원"
+            android:textSize="13sp"
+            android:textColor="#0f0f0f"
+            android:layout_toRightOf="@+id/linear_detail_small_icon_map_img"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_trash_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear_photo_background_img"
+        >
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/linear_photo_review_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:text="한강에서 맥주!"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/linear_trash_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_trash2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear_photo_review_tv"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_trash3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear_trash2_layout"
+        android:background="#f4f4f4"
+        >
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

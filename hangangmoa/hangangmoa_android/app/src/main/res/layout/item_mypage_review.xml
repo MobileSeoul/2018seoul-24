@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mypage_review_name_box"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27.5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        >
+
+        <TextView
+            android:id="@+id/mypage_review_eventname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="한강몽땅 종이배 경주대회"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_arrow2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_mypge_review_profile_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/img_profile" />
+
+        <TextView
+            android:id="@+id/item_mypage_review_usertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:text="김지혜" />
+
+        <ImageView
+            android:id="@+id/item_mypage_star1_img"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:id="@+id/item_mypage_star2_img"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:id="@+id/item_mypage_star3_img"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:id="@+id/item_mypage_star4_img"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:id="@+id/item_mypage_star5_img"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="1.4dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/icon_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/btn_more" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_mypage_review_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="1dp"
+            android:text="시적 순간의 생명력으로 재창조했다. 그만의 고유한 방식으로 촬영된 ‘필름다이어리’ 작품들은 지나간 시간들에 살아 움직이는 이미지의 숨결을 불어넣는다. 덧없이 찰나..."
+            android:textColor="#484848"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/item_mypagereview_picture_img"
+            android:layout_width="275dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/background"/>
+
+        <TextView
+            android:id="@+id/item_mypage_review_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="10dp"
+            android:text="2017.12.29"
+            android:textColor="#7a7a7a"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="0.5dp"
+            android:background="#a0a0a0"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
